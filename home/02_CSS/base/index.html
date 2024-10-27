@@ -1,0 +1,85 @@
+<DOCTYPE html>
+    <html lang="en">
+     <head>
+         <meta charset="UTF=8">
+          <title>Python1</title>
+          <style>
+            .div1{
+                height: 200px;     
+            }
+            .div2{
+                height: 600px;
+            }
+            .card1{
+                width: 141px;
+                height: 187px;
+                background-image: url("cards.7e0a18f0.png");
+                background-repeat: no-repeat;
+                background-position: -430px -2px;
+                padding: 2px;
+                float: left;
+            } 
+            .card2{
+                width: 139px;
+                height: 187px;
+                background-image: url("cards.7e0a18f0.png");
+                background-repeat: no-repeat;
+                background-position: 0px -1792px;
+                padding: 2px;
+                float: left;
+            } 
+            .card3{
+                width: 139px;
+                height: 187px;
+                background-image: url("cards.7e0a18f0.png");
+                background-repeat: no-repeat;
+                background-position: -289 -1393px;
+                padding: 2px;
+                float: left;
+            } 
+            .card4{
+                width: 139px;
+                height: 187px;
+                background-image: url("cards.7e0a18f0.png");
+                background-repeat: no-repeat;
+                background-position: -145 -2190px;
+                padding: 2px;
+                float: left;
+            } 
+            .card5{
+                width: 139px;
+                height: 187px;
+                background-image: url("cards.7e0a18f0.png");
+                background-repeat: no-repeat;
+                background-position: -289 -2390px;
+                padding: 2px;
+                float: left;
+            } 
+            #layer1, #layer2, #layer3, #layer4, #layer5{
+                position: relative;
+            }
+            #layer1 { z-index: 1;}
+            #layer2 { z-index: 2; right: 50px; top: 100px; }
+            #layer3 { z-index: 3; right: 95px; top: 201px; }
+            #layer4 { z-index: 4; right: 143px; top: 298px; }
+            #layer5 { z-index: 5; right: 191px ;top: 389px; }
+          </style>
+     </head>
+      <body style="height: 3000px;">
+      <div class="div1">
+        <div class="card1"></div>
+        <div class="card2"></div>
+        <div class="card3"></div>
+        <div class="card4"></div>
+        <div class="card5"></div>
+      </div>
+        <hr>
+      <div class="div2">
+        <div class="card1" id="layer1"></div>
+        <div class="card2" id="layer2"></div>
+        <div class="card3" id="layer3"></div>
+        <div class="card4" id="layer4"></div>
+        <div class="card5" id="layer5"></div>
+      </div>
+      </body>
+    </html>
