@@ -1,0 +1,52 @@
+<DOCTYPE html>
+    <html lang="en">
+     <head>
+         <meta charset="UTF=8">
+          <title>Python1</title>
+          <style>
+            ul{
+                width: 350px;
+            }
+            .rim1{
+                list-style-type: lower-roman;
+            }
+            .rim2{
+                list-style-type: upper-roman;
+            }
+            div{
+                background-color: black;
+                color: green;
+                text-align: left;
+                white-space: pre;
+                width: 400px;
+                overflow: auto;
+            }
+            </style>
+     </head>
+     <body>
+        <ul class="rim2">
+          <li><strong>Контейнер с кодом</strong>
+             <ul class="rim1">
+               <li>Цвет фона:черный</li>
+               <li>Цвет текста:зеленый</li>
+               <li>Ширина: 400px</li>
+               <li>Максимальная высота контейнера: 4-е строки</li>
+               <li>Переполнение: автоматическое </li>
+             </ul>
+          </li>
+          <li><strong>Список</strong>
+             <ul class="rim1">
+                <li> Ширина: 350px</li>
+                <li>Тип списка: римские цифры</li>
+                <li>Тип вложенного списка: римские нижний регистр цифры</li>
+             </ul>
+            </li>
+        </ul>
+        <div rows="4" id="left"><code>
+        #1/usr/bin/env python
+        print 'Hello. I am a python program.'
+        name = raw input("What is your name&")
+        print "Hello there, " + name + "!"</code>
+        </div>
+     </body>
+ </html>
