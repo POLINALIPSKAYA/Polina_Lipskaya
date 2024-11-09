@@ -1,99 +1,121 @@
 <DOCTYPE html>
     <html lang="en">
-     <head>
-         <meta charset="UTF=8">
-          <title>Python1</title>
-          <style>
-            div{         margin:10px;
+
+    <head>
+        <meta charset="UTF=8">
+        <title>table</title>
+        <style>
+            div {
+                margin: 10px;
             }
-            table{
+
+            table {
                 caption-side: bottom;
                 border-collapse: collapse;
-                
+                width: 100%;
             }
-            tr,td,th{
+
+            tr,
+            td,
+            th {
                 border: dotted rgb(81, 78, 78) 2px;
             }
-            tr:not(#line1){
+
+            tr:not(#line1) {
                 text-align: left;
             }
-            #line1{
+
+            #line1 {
                 background-color: rgb(101, 101, 101);
             }
-            tr:nth-child(odd){
+
+            tr:nth-child(odd) {
                 background-color: rgb(156, 155, 155);
             }
-            tr:hover{
+
+            tr:hover {
                 background-color: rgb(100, 114, 94);
             }
-          </style>
+
+            input {
+                color: white;
+                background-color: blue;
+                height: 30px;
+                border-radius: 8px 8px 8px 8px;
+                -webkit-border-radius: 8px 8px 8px 8px;
+                -moz-border-radius: 8px 8px 8px 8px;
+            }
+        </style>
     </head>
+
     <body>
         <div>
-        <table >
-            <tr id="line1" >
-                <th>ФИО</th>
-                <th>пол</th>
-                <th>должность </th>
-                <th>дата рож.</th>
-                <th>Данные 01</th>
-                <th>Данные 02</th>
-            </tr>
-            <tr>
-                <th>Иванов Иван Иванович </th>
-                <td>М </td>
-                <td>начальник</td>
-                <td>01.01.1960</td>
-                <td>4567</td>
-                <td>3453</td>
-            </tr>
-            <tr >
-                <th>Петрова Илонна Петровна</th>
-                <td>Ж</td>
-                <td>секретарь</td>
-                <td>01.01.1989</td>
-                <td>98795</td>
-                <td>46523</td>
-            </tr>
-            <tr >
-                <th>Сидоров Илья Игоревич</th>
-                <td>М</td>
-                <td>бухгалтер</td>
-                <td>01.01.1979</td>
-                <td>743434</td>
-                <td>987979</td>
-            </tr>
-            <tr >
-                <th>Пупин Федор Федорович</th>
-                <td>М</td>
-                <td>водитель</td>
-                <td>01.01.1963</td>
-                <td>74323434</td>
-                <td>9232379</td>
-            </tr>
-            <tr >
-                <th>Крупин Сергей Иванович</th>
-                <td>М</td>
-                <td>водитель2</td>
-                <td>01.01.1983</td>
-                <td>3234534</td>
-                <td>923123379</td>
-            </tr>
-            <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
-        </table>
-       
+            <table>
+                <tr id="line1">
+                    <th>ФИО</th>
+                    <th>пол</th>
+                    <th>должность </th>
+                    <th>дата рож.</th>
+                    <th>Данные 01</th>
+                    <th>Данные 02</th>
+                </tr>
+                <tr>
+                    <th>Иванов Иван Иванович </th>
+                    <td>М </td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>4567</td>
+                    <td>3453</td>
+                </tr>
+                <tr>
+                    <th>Петрова Илонна Петровна</th>
+                    <td>Ж</td>
+                    <td>секретарь</td>
+                    <td>01.01.1989</td>
+                    <td>98795</td>
+                    <td>46523</td>
+                </tr>
+                <tr>
+                    <th>Сидоров Илья Игоревич</th>
+                    <td>М</td>
+                    <td>бухгалтер</td>
+                    <td>01.01.1979</td>
+                    <td>743434</td>
+                    <td>987979</td>
+                </tr>
+                <tr>
+                    <th>Пупин Федор Федорович</th>
+                    <td>М</td>
+                    <td>водитель</td>
+                    <td>01.01.1963</td>
+                    <td>74323434</td>
+                    <td>9232379</td>
+                </tr>
+                <tr>
+                    <th>Крупин Сергей Иванович</th>
+                    <td>М</td>
+                    <td>водитель2</td>
+                    <td>01.01.1983</td>
+                    <td>3234534</td>
+                    <td>923123379</td>
+                </tr>
+                <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+            </table>
+            <input type="button" value="Показать все строки" style="background-color: blue; color: white;> 
     </div>
     <script
-       src="https://code.jquery.com/jquery-3.7.1.min.js"
-       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-       crossorigin="anonymous"></script>
-       <script>
-        $(document).ready(function($){
+         src=" https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+                crossorigin="anonymous"></script>
+         <script>
+            $(document).ready(function(){
+                $('tr').on('toggle'function(){
+                    $('this').slideToggle(1)
+                })
+            })
+         </script>       
 
-            $("tr").click(function() {
-                $("tr").slideToggle(1)
-            })         
-        })
-       </script>
-    </body>      
-  </html>  
+            
+    </body>
+
+    </html>
